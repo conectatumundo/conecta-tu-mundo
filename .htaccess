@@ -1,0 +1,8 @@
+RewriteEngine On 
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.conectatumundo.com/$1 [R=301,L]
+#RewriteEngine On
+#
+RewriteRule ^$ https://www.conectatumundo.com/frontend/web$1 [R=301,L]
